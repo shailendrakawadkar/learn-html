@@ -33,6 +33,7 @@ import { ToolingComponent } from './components/tooling/tooling.component';
 import { VersioningComponent } from './components/versioning/versioning.component';
 
 const routes: Routes = [
+  { path: '', redirectTo : "/basic-elements" },
   { path: 'basic-elements', component: BasicElementsComponent },
   { path: 'text-formatting', component: TextFormattingComponent },
   { path: 'images-and-multimedia', component: ImagesAndMultimediaComponent },
