@@ -1,0 +1,33 @@
+<section id="html-javascript">
+    <div class="container">
+      <h1>HTML and JavaScript</h1>
+      <p>HTML and JavaScript are two languages that are often used together to create dynamic and interactive web pages. HTML provides the structure and content of a webpage, while JavaScript provides the interactivity and dynamic functionality.</p>
+      <h2>JavaScript Basics</h2>
+      <p>JavaScript is a programming language that is commonly used to add interactivity and dynamic functionality to web pages. It can be used to update content, create animations, validate forms, and handle user events such as clicks and hovers. JavaScript code can be added to a webpage in a number of ways, including inline scripts, internal scripts, and external scripts.</p>
+      <h3>Example:</h3>
+      <div class="code-block">
+        <pre>
+          <code class="language-html">
+  &lt;button id="myButton"&gt;Click Me!&lt;/button&gt;
+  &lt;p id="message"&gt;&lt;/p&gt;
+          </code>
+        </pre>
+      </div>
+      <div class="code-block">
+        <pre>
+          <code class="language-javascript">
+  // internal script
+  var button = document.getElementById("myButton");
+  var message = document.getElementById("message");
+  
+  button.addEventListener("click", function() {{'{'}}
+    message.innerHTML = "Hello, World!";
+  {{'}'}});
+          </code>
+        </pre>
+      </div>
+      <p>In this example, we have a button element with an id of "myButton" and a paragraph element with an id of "message". Using JavaScript, we can select these elements using the `document.getElementById()` method and then add an event listener to the button element that listens for clicks. When the button is clicked, the message element's innerHTML is updated to display the text "Hello, World!".</p>
+      <p>HTML and JavaScript can be used together to create dynamic and interactive web pages that provide a better user experience. It is important to keep in mind that JavaScript should be used to enhance the functionality of a webpage and not as a replacement for HTML and CSS.</p>
+    </div>
+  </section>
+  

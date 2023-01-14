@@ -1,0 +1,59 @@
+<section id="drag-and-drop">
+    <div class="container">
+        <h1>Drag and Drop</h1>
+        <p>The HTML5 drag and drop feature allows users to drag an element and drop it onto another. This feature can be
+            used to create interactive, user-friendly interfaces.</p>
+        <h2>Drag and Drop Example</h2>
+        <p>In this example, we will create a simple drag and drop interface that allows the user to drag a blue square
+            and drop it onto a red square.</p>
+        <div class="code-block">
+            <pre>
+          <code class="language-html">
+  &lt;div id="draggable" class="draggable" draggable="true"&gt;&lt;/div&gt;
+  &lt;div id="droppable" class="droppable"&gt;&lt;/div&gt;
+  
+  &lt;style&gt;
+    .draggable {{'{'}}
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    {{'}'}}
+    .droppable {{'{'}}
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    {{'}'}}
+  &lt;/style&gt;
+  
+  &lt;script&gt;
+    var draggable = document.getElementById("draggable");
+    var droppable = document.getElementById("droppable");
+  
+    draggable.addEventListener("dragstart", function(event) {{'{'}}
+      event.dataTransfer.setData("text", event.target.id);
+    {{'}'}});
+  
+    droppable.addEventListener("dragover", function(event) {{'{'}}
+      event.preventDefault();
+    {{'}'}});
+  
+    droppable.addEventListener("drop", function(event) {{'{'}}
+      event.preventDefault();
+      var data = event.dataTransfer.getData("text");
+      event.target.appendChild(document.getElementById(data));
+    {{'}'}});
+  &lt;/script&gt;
+          </code>
+        </pre>
+        </div>
+        <p>In this example, we first create two divs with the class "draggable" and "droppable". We set the "draggable"
+            attribute to true on the draggable div and apply CSS styles to both elements to give them a distinct look.
+            We then use JavaScript to add event listeners to the elements. The draggable element has a "dragstart" event
+            listener that sets the data to be transferred as the id of the element. The droppable element has "dragover"
+            and "drop" event listeners. The "dragover" event listener prevent the default action from occurring and the
+            "drop" event listener gets the data from the "dragstart" event and appends the draggable element as a child
+            of the droppable element.</p>
+        <p>You can use this feature to create all sorts of interactive interfaces, like, you can make a simple shopping
+            cart, a to-do list, a file manager, etc.</p>
+    </div>
+</section>

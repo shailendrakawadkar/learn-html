@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" opened="false">
+      <mat-nav-list>
+        <a mat-list-item *ngFor="let topic of topics" [routerLink]="topic.link" (click)="sidenav.close()">{{ topic.name }}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <mat-toolbar color="primary" class="sticky-toolbar">
+        <button mat-icon-button (click)="sidenav.opened ? sidenav.close() : sidenav.open()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>My HTML Tutorial Website</span>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

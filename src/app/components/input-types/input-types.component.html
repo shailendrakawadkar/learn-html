@@ -1,0 +1,65 @@
+<section id="input-types">
+    <div class="container">
+        <h1>Input Types</h1>
+        <p>HTML forms are used to collect user input, and the <code>&lt;input&gt;</code> element is used to create
+            various types of form controls. The type attribute is used to specify the type of input control.</p>
+        <h2>Text Input</h2>
+        <p>The most basic type of input is the text input, which is created using the
+            <code>&lt;input type="text"&gt;</code> element. This type of input allows the user to enter a single line of
+            text.</p>
+        <h2>Password Input</h2>
+        <p>A password input is created using the <code>&lt;input type="password"&gt;</code> element. This type of input
+            is used to collect sensitive information, such as a password, and the text entered is obscured for security
+            reasons.</p>
+        <h2>Checkbox Input</h2>
+        <p>A checkbox input is created using the <code>&lt;input type="checkbox"&gt;</code> element. This type of input
+            allows the user to select multiple options from a group of options.</p>
+        <h2>Radio Input</h2>
+        <p>A radio input is created using the <code>&lt;input type="radio"&gt;</code> element. This type of input allows
+            the user to select a single option from a group of options.</p>
+        <h2>Select Input</h2>
+        <p>A select input is created using the <code>&lt;select&gt;</code> element. This type of input allows the user
+            to select one or more options from a list of options. The options within the select input are created using
+            the <code>&lt;option&gt;</code> element.</p>
+        <h2>Input Types Example</h2>
+        <div class="code-block">
+            <pre>
+          <code class="language-html">
+  &lt;form&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;
+    &lt;br&gt;
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password"&gt;
+    &lt;br&gt;
+    &lt;label&gt;Fruits:&lt;/label&gt;
+    &lt;input type="checkbox" id="apple" name="fruit" value="apple"&gt;
+    &lt;label for="apple"&gt;Apple&lt;/label&gt;
+    &lt;input type="checkbox" id="banana" name="fruit" value="banana"&gt;
+    &lt;label for="banana"&gt;Banana&lt;/label&gt;
+    &lt;br&gt;
+    &lt;label&gt;Gender:&lt;/label&gt;
+    &lt;input type="radio" id="male" name="gender" value="male"&gt;
+    &lt;label for="male"&gt;Male&lt;/label&gt;
+    &lt;input type="radio" id="female" name="gender" value="female"&gt;
+    &lt;label for="female"&gt;Female&lt;/label&gt;
+    &lt;br&gt;
+    &lt;label for="country"&gt;Country:&lt;/label&gt;
+    &lt;select id="country" name="country"&gt;
+      &lt;option value="usa"&gt;USA&lt;/option&gt;
+      &lt;option value="canada"&gt;Canada&lt;/option&gt;
+      &lt;option value="mexico"&gt;Mexico&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+  &lt;/form&gt;
+          </code>
+        </pre>
+        </div>
+        <p>In this example, we have used various input types such as text, password, checkbox, radio, and select to
+            create a simple form. By using the appropriate input type, we can ensure that the user input is collected in
+            an organized and easy-to-use manner. Additionally, we have also used the label element to improve
+            accessibility by providing a text description for each input.
+        </p>
+    </div>
+</section>

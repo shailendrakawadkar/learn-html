@@ -1,0 +1,97 @@
+<section id="html-css">
+    <div class="container">
+        <h1>HTML and CSS</h1>
+        <p>In this section, we will learn about the basics of HTML and CSS and how they work together to create a
+            webpage.</p>
+        <h2>HTML</h2>
+        <p>HTML (Hypertext Markup Language) is the standard language used to create web pages. It provides the structure
+            and content of a webpage. HTML elements are represented by tags, which are enclosed in angle brackets.
+            Examples of HTML tags include
+            <code><pre>&lt;p&gt;, &lt;h1&gt;, &lt;div&gt;, &lt;a&gt;, &lt;img&gt; etc.</pre></code>
+        </p>
+        <p>HTML documents are made up of a series of elements, each of which is represented by an opening
+            and closing tag. The content of the element is placed between these tags. For example,
+            <code><pre>&lt;p&gt;This is a paragraph&lt;/p&gt;</pre></code> is an example of a paragraph element.
+        </p>
+        <h2>CSS</h2>
+        <p>CSS (Cascading Style Sheets) is a language used to add style and layout to HTML documents. It
+            allows for the separation of presentation from structure, which makes it easier to maintain and
+            update a webpage. CSS styles are applied to HTML elements using selectors, which specify which
+            elements the styles should be applied to.</p>
+        <p>CSS styles can be applied in a number of ways, including inline styles, internal stylesheets, and
+            external stylesheets. Inline styles are added directly to an HTML element using the style
+            attribute, while internal and external stylesheets provide a way to separate the styles from the
+            HTML content.</p>
+        <h3>Example:</h3>
+        <div class="code-block">
+            <pre>
+          <code class="language-html">
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;header&gt;
+        &lt;h1 class="page-title"&gt;My Website&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#services"&gt;Services&
+          &lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;main&gt;
+          &lt;section id="home"&gt;
+            &lt;h2&gt;Home&lt;/h2&gt;
+            &lt;p&gt;Welcome to our website!&lt;/p&gt;
+          &lt;/section&gt;
+          &lt;section id="about"&gt;
+            &lt;h2&gt;About&lt;/h2&gt;
+            &lt;p&gt;Learn more about our company and our mission.&lt;/p&gt;
+          &lt;/section&gt;
+        &lt;/main&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+        <div class="code-block">
+            <pre>
+            <code class="language-css">
+    /* styles.css */
+    
+    .page-title {{'{'}}
+      text-align: center;
+      font-size: 36px;
+      color: #333;
+    {{'}'}}
+    
+    nav ul {{'{'}}
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    {{'}'}}
+    
+    nav a {{'{'}}
+      text-decoration: none;
+      color: #333;
+    {{'}'}}
+    
+    section {{'{'}}
+      padding: 20px;
+    {{'}'}}
+            </code>
+          </pre>
+        </div>
+        <p>As you can see in the example, the HTML provides the structure and content of the webpage, while
+            the CSS is used to add style and layout. The
+            <code><pre>&lt;link&gt;</pre></code> tag in the HTML head is used to link to an external stylesheet, in this
+            case
+            "styles.css", which is where the styles for the webpage are defined. The class attribute is used
+            to apply styles to specific elements, such as the "page-title" class applied to the header h1
+            element.
+        </p>
+    </div>
+</section>

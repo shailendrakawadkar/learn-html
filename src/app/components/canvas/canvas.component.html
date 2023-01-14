@@ -1,0 +1,24 @@
+<section id="canvas">
+    <div class="container">
+      <h1>Canvas</h1>
+      <p>The HTML <code>&lt;canvas&gt;</code> element is used to draw graphics on a web page. It can be used to create animations, games, and other interactive content.</p>
+      <h2>Canvas Example</h2>
+      <p>In this example, we will create a simple canvas that displays a red rectangle.</p>
+      <div class="code-block">
+        <pre>
+          <code class="language-html">
+  &lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+  &lt;script&gt;
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "red";
+    ctx.fillRect(10, 10, 180, 80);
+  &lt;/script&gt;
+          </code>
+        </pre>
+      </div>
+      <p>In this example, we first create a canvas element with a specified width and height. Then, we use JavaScript to access the canvas and its context. With the context, we can set the fill style to red, and then use the fillRect() method to draw a rectangle on the canvas at the coordinates (10, 10) with a width of 180 and a height of 80.</p>
+      <p>This is just a basic example, you can use canvas to create more complex graphics, animations and games by using the various canvas API's such as paths, gradients, images, text, and more.</p>
+    </div>
+  </section>
+  

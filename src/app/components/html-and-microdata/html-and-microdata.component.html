@@ -1,0 +1,31 @@
+<section id="html-and-microdata">
+    <div class="container">
+        <h1>HTML and Microdata</h1>
+        <p>Microdata is a method of embedding structured data within HTML code to provide additional information about
+            the content on a web page. Search engines, web browsers, and other software can use this data to understand
+            the content and context of the page.</p>
+        <h2>Using Microdata in HTML</h2>
+        <p>Microdata is added to a web page using the 'itemscope', 'itemtype', and 'itemprop' attributes. The
+            'itemscope' attribute is used to define a new item, the 'itemtype' attribute is used to specify the item's
+            type, and the 'itemprop' attribute is used to specify the properties of the item.</p>
+        <p>For example, to mark up a product on a webpage using microdata, we can use the following code:</p>
+        <div class="code-block">
+            <pre>
+          <code class="language-html">
+  &lt;div itemscope itemtype="http://schema.org/Product"&gt;
+    &lt;h1 itemprop="name"&gt;Product Name&lt;/h1&gt;
+    &lt;img itemprop="image" src="product.jpg" alt="Product Image"&gt;
+    &lt;p itemprop="description"&gt;Product Description&lt;/p&gt;
+    &lt;p&gt;&lt;span itemprop="price"&gt;$50&lt;/span&gt; &lt;span itemprop="priceCurrency"&gt;USD&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+          </code>
+        </pre>
+        </div>
+        <p>In this example, we have a 'div' element with 'itemscope' and 'itemtype' attributes that define a new item of
+            type "Product". Inside the 'div', we have several elements with 'itemprop' attributes that specify the
+            properties of the product such as 'name', 'image', 'description', 'price', and 'priceCurrency'.</p>
+        <p>By adding microdata to a web page, you can help search engines and other software understand the content and
+            context of the page, which can improve the visibility of the page in search results and enable new features
+            and functionality.</p>
+    </div>
+</section>

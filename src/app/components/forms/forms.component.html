@@ -1,0 +1,36 @@
+<section id="html-forms">
+    <div class="container">
+        <h1>HTML Forms</h1>
+        <p>HTML forms allow users to interact with a website by providing a way to input data and send it to the server.
+            Forms are created using the 'form' element and various form controls, such as text fields, checkboxes, and
+            buttons.</p>
+        <h2>Creating an HTML Form</h2>
+        <p>To create a form, you will need to use the 'form' element and various form controls. The 'form' element is
+            used to define the form and contains all the form controls. Form controls, such as text fields, checkboxes,
+            and buttons, are used to collect data from the user.</p>
+        <p>Here is an example of a simple HTML form:</p>
+        <div class="code-block">
+            <pre>
+          <code class="language-html">
+  &lt;form action="submit-form.php" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+  &lt;/form&gt;
+          </code>
+        </pre>
+        </div>
+        <p>In this example, the 'form' element has an 'action' attribute that specifies the server-side script that will
+            process the form data and a 'method' attribute that specifies the HTTP method to be used when sending the
+            form data. Inside the form, we have several 'label' and 'input' elements that define the form controls. The
+            'label' elements are used to provide a text description for the form controls, while the 'input' elements
+            are used to collect data from the user. The 'input' element type 'submit' create a submit button to submit
+            form data to the server. </p>
+        <p>Forms can be styled using CSS to create a more visually appealing layout and provide custom validation using
+            JavaScript to ensure that the form data is valid before submitting it to the server. </p>
+    </div>
+</section>

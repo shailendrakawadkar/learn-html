@@ -1,0 +1,29 @@
+<section id="html-and-microformats">
+    <div class="container">
+        <h1>HTML and Microformats</h1>
+        <p>Microformats are a set of open standards for marking up structured data within HTML code. They provide a way
+            to embed additional information about the content on a web page, such as contact information, events, and
+            reviews, in a way that is both human- and machine-readable.</p>
+        <h2>Using Microformats in HTML</h2>
+        <p>Microformats use standard HTML classes to define the properties of an item. For example, to mark up an event
+            using the hCalendar microformat, we can use the following code:</p>
+        <div class="code-block">
+            <pre>
+          <code class="language-html">
+  &lt;div class="vevent"&gt;
+    &lt;a class="url" href="event.html"&gt;Event Name&lt;/a&gt;
+    &lt;span class="dtstart"&gt;2022-05-01&lt;/span&gt;
+    &lt;span class="location"&gt;Event Location&lt;/span&gt;
+  &lt;/div&gt;
+          </code>
+        </pre>
+        </div>
+        <p>In this example, we have a 'div' element with the 'vevent' class that defines the item as an event. Inside
+            the 'div', we have several elements with classes such as 'url', 'dtstart', and 'location' that specify the
+            properties of the event such as the event name, start date, and location. </p>
+        <p>By using microformats, you can help search engines and other software understand the content and context of
+            the page, which can improve the visibility of the page in search results and enable new features and
+            functionality. Additionally, you may also consider using a microformat parser to extract the structured data
+            from your page for use in other applications.</p>
+    </div>
+</section>

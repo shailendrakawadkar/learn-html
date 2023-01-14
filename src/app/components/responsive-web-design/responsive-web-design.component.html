@@ -1,0 +1,42 @@
+<section id="responsive-web-design">
+    <div class="container">
+      <h1>Responsive Web Design</h1>
+      <p>Responsive web design is an approach to web design that ensures that a website looks and works well on a variety of devices and screen sizes. This includes desktops, laptops, tablets, and smartphones.</p>
+      <h2>Techniques for Responsive Web Design</h2>
+      <ul>
+        <li>Flexible grid-based layout: Using a flexible grid-based layout that adjusts to the size of the screen.</li>
+        <li>Flexible images and videos: Using CSS to ensure that images and videos scale correctly on different devices.</li>
+        <li>Media queries: Using CSS media queries to apply different styles based on the device and screen size.</li>
+        <li>Mobile-first design: Starting the design process with the smallest screen size and working up to larger screens.</li>
+      </ul>
+      <h2>Responsive Web Design Example</h2>
+      <div class="code-block">
+        <pre>
+          <code class="language-css">
+  /* styles.css */
+  
+  /* Mobile-first styles */
+  body {{'{'}}
+    font-size: 16px;
+  {{'}'}}
+  
+  /* Media query for tablets and desktops */
+  @media (min-width: 768px) {{'{'}}
+    body {{'{'}}
+      font-size: 18px;
+    {{'}'}}
+    {{'}'}}
+  
+  /* Media query for large screens */
+  @media (min-width: 1200px) {{'{'}}
+    body {{'{'}}
+      font-size: 20px;
+    {{'}'}}
+  {{'}'}}
+          </code>
+        </pre>
+      </div>
+      <p>In this example, we have used CSS media queries to apply different styles to the <code>body</code> element based on the device and screen size. The mobile-first design approach is used, meaning that the base font size is set for small screens and then increased for larger screens using media queries.</p>
+      <p>By using responsive web design techniques, we can ensure that a website looks and works well on a variety of devices and screen sizes. This provides a better user experience and can increase engagement and conversions.</p>
+    </div>
+  </section>
